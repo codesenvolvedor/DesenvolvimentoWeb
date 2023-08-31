@@ -1,0 +1,58 @@
+/* Estilos para o body e html */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Estilos para o container principal */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #003737; /* Verde escuro */
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Remover rolagem caso o conteúdo exceda a altura da página */
+}
+
+.imagem-capa {
+  width: 150px; /* Defina o tamanho desejado da imagem circular */
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%; /* Adiciona borda circular */
+  margin-bottom: 20px; /* Adiciona margem inferior */
+}
+
+.imagem-capa img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.link-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.link-box {
+  width: 200px;
+  height: 50px;
+  margin: 10px;
+  text-align: center;
+  line-height: 50px;
+  background-color: #009688; /* Verde escuro */
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease; /* Adiciona uma transição suave de cor */
+}
+
+.link-box:hover {
+  background-color: #00796b; /* Verde escuro ao passar o mouse */
+}
